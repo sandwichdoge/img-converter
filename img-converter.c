@@ -60,6 +60,8 @@ int main(int argc, char const *argv[])
         case -2:
             printf("Error! Output image format is not supported.\n");
             break;
+        default:
+            printf("Problem saving output. Code: %d\n", ret);
     }
 
     return 0;
