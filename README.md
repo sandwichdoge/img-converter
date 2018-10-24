@@ -1,16 +1,21 @@
 # img-converter
 Convert image format.
 
-COMPILE:
+Supported input formats: JPEG, PNG, BMP, HDR, PSD, TGA, PIC, PPM, PGM, PBM
+
+Supported output formats: JPEG, PNG, BMP
+
+#COMPILE:
 ```
 make
 ```
+Or
+```
+gcc lib/sod/sod.c img-converter.c -lm -Ofast -march=native -Wall -std=c99 -o img-converter
+```
 
-USAGE
+#USAGE
 ```
 img-converter <src> <dst> [-q=QUALITY]
 ```
 
-SUPPORTED INPUT FORMATS: JPEG, PNG, BMP, HDR, PSD, TGA, PIC, PPM, PGM, PBM
-
-SUPPORTED OUTPUT FORMATS: JPEG, PNG, BMP
